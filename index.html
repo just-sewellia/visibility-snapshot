@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Trustifi in AI answers, September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper:#F7F8FA; --ink:#14202E; --soft:#51637A; --rule:#DCE3EA;
+  --on:#1C6B58; --half:#B0762A; --off:#CBD4DD; --line:#A9B6C4;
+  --accent:#27527E; --panel:#FFFFFF;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:#10171F; --ink:#E6EBF1; --soft:#9AAABC; --rule:#27333F;
+    --on:#3E9C81; --half:#C79448; --off:#33404D; --line:#4B5B6B;
+    --accent:#7FAAD6; --panel:#161F29;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:#10171F; --ink:#E6EBF1; --soft:#9AAABC; --rule:#27333F;
+  --on:#3E9C81; --half:#C79448; --off:#33404D; --line:#4B5B6B;
+  --accent:#7FAAD6; --panel:#161F29;
+}
+*,*::before,*::after { box-sizing:inherit; }
+html { scroll-padding-top:env(safe-area-inset-top,0px); }
+body {
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Spectral,Georgia,'Times New Roman',serif;
+  font-size:18px; line-height:1.68; -webkit-font-smoothing:antialiased;
+}
+.wrap { max-width:780px; margin:0 auto; padding:clamp(28px,6vw,72px) clamp(18px,5vw,32px) 96px; }
+h1 {
+  font-family:Spectral,Georgia,serif; font-weight:600; letter-spacing:-.015em;
+  font-size:clamp(30px,5.4vw,46px); line-height:1.12; margin:0 0 14px;
+}
+.dek { color:var(--soft); font-size:clamp(17px,2.4vw,20px); margin:0 0 6px; max-width:60ch; }
+.stamp {
+  font-family:'IBM Plex Sans',system-ui,sans-serif; font-size:13.5px; color:var(--soft);
+  line-height:1.6; margin:18px 0 0; padding-top:16px; border-top:1px solid var(--rule); max-width:62ch;
+}
+h2 {
+  font-family:Spectral,Georgia,serif; font-weight:600; letter-spacing:-.01em;
+  font-size:clamp(23px,3.4vw,29px); line-height:1.22; margin:64px 0 4px; max-width:26ch;
+}
+h2 + .sub { color:var(--soft); margin:0 0 18px; font-size:16.5px; max-width:62ch; }
+p { max-width:66ch; margin:0 0 18px; }
+strong { font-weight:600; }
+em { font-style:italic; }
+.lede { font-size:clamp(20px,3vw,24px); line-height:1.44; margin:34px 0 22px; max-width:30ch; font-weight:600; letter-spacing:-.01em; }
+/* ---- matrix ---- */
+.matrix { margin:34px 0 10px; }
+.mhead {
+  display:flex; align-items:flex-end; gap:10px; justify-content:flex-end;
+  font-family:'IBM Plex Sans',sans-serif; font-size:11.5px; color:var(--soft);
+  padding-bottom:8px; border-bottom:1px solid var(--rule);
+}
+.mhead span { width:26px; text-align:center; }
+.grp { padding:26px 0 8px; }
+.grp h3 {
+  font-family:'IBM Plex Sans',sans-serif; font-size:14px; font-weight:600;
+  margin:0; letter-spacing:.005em;
+}
+.grp p { font-family:'IBM Plex Sans',sans-serif; font-size:12.5px; color:var(--soft); margin:2px 0 0; }
+.row {
+  display:flex; align-items:center; gap:10px; justify-content:space-between;
+  padding:7px 0; border-bottom:1px solid var(--rule);
+}
+.q {
+  font-family:'IBM Plex Sans',sans-serif; font-size:13.5px; line-height:1.42;
+  color:var(--ink); flex:1 1 auto; min-width:0;
+}
+.nm {
+  font-weight:500; font-size:11px; color:var(--accent);
+  border:1px solid var(--accent); border-radius:2px; padding:0 4px;
+  white-space:nowrap; margin-left:6px; display:inline-block; vertical-align:1px;
+}
+.cells { display:flex; gap:10px; flex:0 0 auto; }
+.c { width:26px; height:26px; border-radius:2px; display:block; position:relative; }
+.c i {
+  position:absolute; width:1px; height:1px; overflow:hidden;
+  clip:rect(0 0 0 0); white-space:nowrap;
+}
+.c.on { background:var(--on); }
+.c.half { background:var(--half); }
+.c.off { background:var(--off); }
+.c.none { background:transparent; border:1px dashed var(--line); }
+.gridnote {
+  font-family:'IBM Plex Sans',sans-serif; font-size:13px; color:var(--soft);
+  margin:0 0 12px; max-width:62ch;
+}
+.key {
+  display:flex; flex-wrap:wrap; gap:16px; margin:0 0 4px; padding-bottom:14px;
+  font-family:'IBM Plex Sans',sans-serif; font-size:12.5px; color:var(--soft);
+}
+.key span { display:flex; align-items:center; gap:7px; }
+.key i { width:13px; height:13px; border-radius:2px; display:block; }
+/* ---- stat block ---- */
+.stats {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:2px; background:var(--rule); border:1px solid var(--rule);
+  margin:30px 0; border-radius:3px; overflow:hidden;
+}
+.stat { background:var(--panel); padding:18px 16px; }
+.stat b {
+  display:block; font-family:'IBM Plex Sans',sans-serif; font-weight:600;
+  font-size:30px; line-height:1.1; letter-spacing:-.02em; color:var(--ink);
+}
+.stat span {
+  display:block; font-family:'IBM Plex Sans',sans-serif; font-size:12.5px;
+  color:var(--soft); margin-top:5px; line-height:1.4;
+}
+/* ---- pull ---- */
+blockquote {
+  margin:26px 0; padding:0 0 0 20px; border-left:2px solid var(--accent);
+  font-style:italic; color:var(--ink); max-width:60ch;
+}
+blockquote cite {
+  display:block; font-style:normal; font-family:'IBM Plex Sans',sans-serif;
+  font-size:12.5px; color:var(--soft); margin-top:8px;
+}
+/* ---- moves ---- */
+.move { padding:22px 0; border-top:1px solid var(--rule); }
+.move h3 { font-family:Spectral,serif; font-size:20px; font-weight:600; margin:0 0 6px; }
+.move .eff {
+  font-family:'IBM Plex Sans',sans-serif; font-size:12px; color:var(--soft);
+  margin:0 0 10px;
+}
+.move p { margin:0 0 10px; font-size:17px; }
+/* ---- limits ---- */
+.limits {
+  margin-top:64px; padding-top:22px; border-top:2px solid var(--ink);
+  font-family:'IBM Plex Sans',sans-serif; font-size:14px; color:var(--soft);
+}
+.limits h2 { font-family:'IBM Plex Sans',sans-serif; font-size:16px; margin:0 0 12px; color:var(--ink); }
+.limits p { font-size:14px; line-height:1.6; max-width:70ch; }
+.limits ul { max-width:70ch; padding-left:18px; margin:0 0 16px; }
+.limits li { margin-bottom:7px; }
+@media (max-width:560px) {
+  body { font-size:17px; }
+  .row { align-items:flex-start; }
+  .c { width:22px; height:22px; }
+  .mhead span { width:22px; }
+  .cells { gap:7px; padding-top:2px; }
+  .mhead { gap:7px; }
+}
+@media (prefers-reduced-motion:reduce) { * { animation:none!important; transition:none!important; } }
+a { color:var(--accent); }
+a:focus-visible, .c:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<h1>Trustifi in AI answers</h1>
+<p class="dek">I asked ChatGPT 25 buyer questions, twice each, and logged what came back. One pattern held throughout.</p>
+<p class="stamp">50 runs plus 12 confirmation runs, ChatGPT free tier, September 2026. Each in a fresh chat with memory disabled. First response recorded every time, never regenerated. Method and limits are at the bottom.</p>
+
+<section class="matrix" aria-label="Presence of Trustifi across 25 questions, run twice">
+  <p class="gridnote">Every question was asked twice, in separate sessions. The two boxes on each row are those two runs.</p>
+  <div class="key keytop">
+    <span><i style="background:var(--on)"></i>Trustifi named and described</span>
+    <span><i style="background:var(--half)"></i>Passing mention</span>
+    <span><i style="background:var(--off)"></i>Not mentioned</span>
+  </div>
+  <div class="mhead" aria-hidden="true"><span>1</span><span>2</span></div>
+  <div class="grp"><h3>Questions that name Trustifi</h3><p>The buyer already knows the name</p></div>
+<div class="row"><span class="q">what does Trustifi do</span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c on" title="Run 2: Named"><i>Named</i></span></span></div>
+<div class="row"><span class="q">is Trustifi a good fit for MSPs</span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c on" title="Run 2: Named"><i>Named</i></span></span></div>
+<div class="row"><span class="q">how much does Trustifi cost</span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c on" title="Run 2: Named"><i>Named</i></span></span></div>
+<div class="row"><span class="q">Trustifi reviews</span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c on" title="Run 2: Named"><i>Named</i></span></span></div>
+<div class="row"><span class="q">does Trustifi do inbound threat protection or just email encryption</span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c on" title="Run 2: Named"><i>Named</i></span></span></div>
+<div class="grp"><h3>Comparisons</h3><p>The buyer is comparing named vendors</p></div>
+<div class="row"><span class="q">Trustifi vs Barracuda for MSPs <b class="nm" title="This question contains the word Trustifi">names Trustifi</b></span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c on" title="Run 2: Named"><i>Named</i></span></span></div>
+<div class="row"><span class="q">Trustifi vs Proofpoint Essentials <b class="nm" title="This question contains the word Trustifi">names Trustifi</b></span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c on" title="Run 2: Named"><i>Named</i></span></span></div>
+<div class="row"><span class="q">Trustifi vs IRONSCALES <b class="nm" title="This question contains the word Trustifi">names Trustifi</b></span><span class="cells"><span class="c on" title="Run 1: Named"><i>Named</i></span><span class="c half" title="Run 2: Passing mention"><i>Passing mention</i></span></span></div>
+<div class="row"><span class="q">alternatives to Barracuda Email Protection for MSPs</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">Mimecast alternatives for a small MSP</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="grp"><h3>Category questions</h3><p>The buyer describes a need</p></div>
+<div class="row"><span class="q">best email security for MSPs</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">best multi-tenant email security platform for Microsoft 365</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">what email security should an MSP resell to SMB clients</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">email security vendors with a good MSP partner program</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">best API-based email security that doesn&#x27;t require MX record changes</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="grp"><h3>Situation questions</h3><p>The buyer describes a situation</p></div>
+<div class="row"><span class="q">how do I protect 30 client tenants from phishing without hiring a SOC</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">email security with DLP and security awareness training in one platform</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">HIPAA compliant email encryption for a healthcare MSP</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c half" title="Run 2: Passing mention"><i>Passing mention</i></span></span></div>
+<div class="row"><span class="q">cheapest way for an MSP to add email security as recurring revenue</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">best email security for Google Workspace MSP clients</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="grp"><h3>Cost and pricing questions</h3><p>The buyer is pricing the category</p></div>
+<div class="row"><span class="q">how much does email DLP cost</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">what does inbound email security cost per mailbox</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">best anti-phishing software for business</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">is email encryption worth the cost for a small business</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+<div class="row"><span class="q">email security pricing models compared</span><span class="cells"><span class="c off" title="Run 1: Absent"><i>Absent</i></span><span class="c off" title="Run 2: Absent"><i>Absent</i></span></span></div>
+</section>
+
+<p class="lede">Trustifi was named and described only when the question already contained its name.</p>
+
+<p>Eight of the 25 questions mention Trustifi directly. Across the 16 runs of those eight, Trustifi was named and described in 15.</p>
+
+<p>The other 17 questions describe a need without naming a vendor. Across the 34 runs of those, Trustifi was named in none. It received one passing mention and was absent from the other 33.</p>
+
+<p>The model has plenty of information about Trustifi. It cites trustifi.com, refers to Inbound Shield and Outbound Shield as separate products, and answers questions about pricing and reviews. What it does not do is raise Trustifi when someone is still working out what to buy.</p>
+
+<div class="stats">
+  <div class="stat"><b>15/16</b><span>Runs naming Trustifi, when the question did</span></div>
+  <div class="stat"><b>0/34</b><span>Runs naming Trustifi, when the question did not</span></div>
+  <div class="stat"><b>92%</b><span>The two runs agreed on 23 of 25 questions</span></div>
+</div>
+
+<p>The two runs were independent and agreed on 23 of the 25 questions. Both disagreements were between "named" and "passing mention", never between mentioned and absent. I then re-asked the eight questions that carry the finding up to two more times, and 11 of those 12 extra runs matched. <em>Best email security for MSPs</em> returned nothing for Trustifi every time it was asked.</p>
+
+<h2>One source guards the category questions</h2>
+<p class="sub">Expert Insights was cited in 17 of the 50 runs, more than any source except trustifi.com.</p>
+
+<p>The two divide cleanly by question type. Trustifi's own site gets cited on questions that name the brand. Expert Insights gets cited on questions that do not, including five of the ten category runs.</p>
+
+<p>Their MSP roundup does not list Trustifi, though Trustifi displays an Expert Insights badge on its homepage, so some relationship already exists.</p>
+
+<p>Acronis, Guardz and Channel Insider appeared the same way, each publishing a ranked list that includes itself. The category has no neutral buyer's guide, so assistants fall back on vendor-published ones.</p>
+
+<h2>Microsoft is the default answer on cost</h2>
+<p class="sub">Microsoft Defender was the first vendor named in 8 of the 50 runs, mostly about price.</p>
+
+<p>It led the answers on <em>cheapest way for an MSP to add email security as recurring revenue</em>, <em>what does inbound email security cost per mailbox</em>, and <em>email security pricing models compared</em>.</p>
+
+<p>On <em>how do I protect 30 client tenants from phishing without hiring a SOC</em>, the answer cited a single Microsoft architecture document and named no vendor at all. For questions phrased as a situation rather than a purchase, the assistant returns a configuration plan instead of a shortlist. No vendor currently holds that answer.</p>
+
+<h2>The August cost posts did not surface</h2>
+<p class="sub">None of the runs on cost and pricing questions cited trustifi.com.</p>
+
+<p>Trustifi published cost content in August, including <a href="https://trustifi.com/blog/guide-to-email-encryption-costs/">Guide to Email Encryption Costs</a> and <a href="https://trustifi.com/blog/how-much-does-email-dlp-cost/">How Much Does Email DLP Cost</a>. Both give market-wide ranges and pricing models rather than Trustifi's own prices, which is the standard format for this kind of guide.</p>
+
+<p>Neither appeared in any run. The cited sources were costbench.com, getmonetizely.com, spambrella.com, simplyit.biz and unvarnishedreviews.com.</p>
+
+<p>Those posts are about five weeks old, which is early for indexing and citation. This reads as distribution lag rather than the wrong topic.</p>
+
+<p>Worth noting alongside it: asked <em>how much does Trustifi cost</em>, the answers said Trustifi does not publish pricing and fell back on Software Advice and Gartner, one of them quoting roughly $6 per user per month from a third-party directory. On its own pricing, the number in circulation is someone else's.</p>
+
+<h2>What already gets cited</h2>
+
+<p>Four things in the log are working and worth protecting.</p>
+
+<p><strong>The FAQ page.</strong> trustifi.com/faq/ was the most frequently cited Trustifi URL, including on pricing questions where no public price list exists.</p>
+
+<p><strong>The MSP page.</strong> Cited on every question that named both Trustifi and MSPs, and the answers consistently picked up multi-tenant management, white-label and consolidation.</p>
+
+<p><strong>A PDF.</strong> Proofpoint-vs-Trustifi.pdf, sitting in the media library, was cited directly in a comparison run. Assistants read uploaded documents, which is a surface few teams use deliberately.</p>
+
+<p><strong>Third-party comparison pages.</strong> G2 and TrustRadius comparison URLs were cited repeatedly on head-to-heads.</p>
+
+<p>One note on how Trustifi gets framed. On questions naming Trustifi alone, answers described both inbound protection and outbound encryption. In comparisons the framing shifted, with Trustifi presented as the encryption and compliance choice against vendors presented on threat detection. One answer gave a reason for this without being asked:</p>
+
+<blockquote>The confusion comes from the fact that Trustifi originally became well known for its email encryption and compliance capabilities.<cite>ChatGPT, second run</cite></blockquote>
+
+<h2>Where I would put content next</h2>
+<p class="sub">Each one targets specific questions from the set above.</p>
+
+<div class="move">
+  <h3>A buyer's guide to email security for MSPs</h3>
+  <p class="eff">Targets questions 1, 3 and 4. The category questions with the widest reach.</p>
+  <p>The answers to these are currently assembled from Acronis, Guardz and Expert Insights roundups. Trustifi has an MSP product page but no evaluative guide, and a product page does not compete for a question phrased as "which should I choose". This needs to be genuinely comparative, including where Trustifi is not the right answer, or it will not get cited.</p>
+</div>
+
+<div class="move">
+  <h3>How a small MSP covers 30 tenants without a SOC</h3>
+  <p class="eff">Targets questions 16, 17 and 19. Currently unclaimed.</p>
+  <p>This is the question that returned a Microsoft architecture document and no vendors. Nothing is competing for it. A practical operations piece covering what to automate, what to escalate, staffing, and cost per tenant would be the first thing in the category written for that question. It is also closest in form to the cost posts already published.</p>
+</div>
+
+<div class="move">
+  <h3>Comparison assets for Barracuda, Mimecast and IRONSCALES</h3>
+  <p class="eff">Targets questions 6 through 10, including the two that name no vendor.</p>
+  <p>The Proofpoint PDF already earns citations, so the format works. The gap is questions 9 and 10, which ask for alternatives without naming Trustifi and returned nothing. Those need pages built around the competitor's name rather than Trustifi's. Keeping the G2 and TrustRadius comparison entries current feeds the same surface.</p>
+</div>
+
+<div class="move">
+  <h3>Separately: Expert Insights placement</h3>
+  <p class="eff">Not content. Effort unknown.</p>
+  <p>It is the most cited third-party domain in the set and it guards the category questions. The existing badge suggests a route in. Worth saying plainly that I do not know what adding a vendor to their MSP roundup involves. Some roundup sites have editorial review, some have partner or paid placement, and some have long queues. The first step is finding out which, not assuming it is quick.</p>
+</div>
+
+<section class="limits">
+  <h2>Method and limits</h2>
+  <p>25 questions in five groups, run against ChatGPT in September 2026. Each run in a new chat on a signed-in free account with memory disabled, in a separate browser profile with no prior history. First response recorded every time, never regenerated. All 25 were run twice, and a core eight were run two further times.</p>
+  <p>What this does not cover:</p>
+  <ul>
+    <li>One engine. Google AI Overviews reach more buyers than any chatbot and behave differently. This says nothing about them.</li>
+    <li>Free tier, so the model version was not shown in the interface and may have changed mid-session.</li>
+    <li>8 of the 50 runs returned no citations, clustered in the situation questions. Those answers come from training rather than live retrieval, so new content will move them more slowly.</li>
+    <li>The questions are my own, written to sound like a buyer rather than drawn from search volume data.</li>
+    <li>This records what the assistant said, not whether it was correct. Claims about Trustifi's products in these answers have not been fact-checked against the product.</li>
+    <li>A snapshot with a date on it. The log is built to re-run against the same 25 questions later, which is the only way to separate movement from noise.</li>
+  </ul>
+</section>
+
+</main>
+</body>
+</html>
